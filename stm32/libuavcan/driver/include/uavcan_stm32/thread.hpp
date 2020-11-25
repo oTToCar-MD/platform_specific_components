@@ -19,6 +19,8 @@
 #elif UAVCAN_STM32_BAREMETAL
 #elif UAVCAN_STM32_FREERTOS
 # include <cmsis_os.h>
+#include <semphr.h>
+#include <task.h>
 #else
 # error "Unknown OS"
 #endif
